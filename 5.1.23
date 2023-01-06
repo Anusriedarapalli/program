@@ -1,0 +1,34 @@
+n=int(input())
+m=[]
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    m.append(l)
+k=int(input())
+for i in range(0,n):
+    for j in range(0,n):
+        if i==j:
+            m[i][j]=k
+        else:
+            m[i][j]=0
+for i in m:
+    print(i)
+    
+
+n=int(input())
+l=list(map(int,input().split()))
+a=[]
+for i in l:
+    if i%2==1:
+        a.append(i)
+t=tuple(a)
+print(t)
+
+n=int(input())
+l=list(map(int,input().split()))
+l.sort()
+k=int(input())
+a=l[-k:]
+print(max(a)-min(a))
